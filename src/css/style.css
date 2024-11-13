@@ -184,7 +184,17 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 255, 213, 0.6);
 }
 
-.audio-buttons iframe:nth-child(2) {
-    /* Garantir que o segundo iframe esteja bem alinhado */
-    margin-top: 0px;
+/* Estilo para centralizar e ajustar o GIF no footer */
+.footer-gif {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior para separar do restante do conteúdo */
+}
+
+.tenor-gif-embed {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.6); /* Efeito de brilho ao redor do GIF */
+    animation: fadeIn 1s ease-in-out; /* Animação de entrada */
+    margin-top: 10px;
 }
