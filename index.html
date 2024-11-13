@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="src/img/TC__2_-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/img/LogoRV.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
     <title>SuperNova Projeto Integrador</title>
@@ -21,7 +21,7 @@
     <!-- Banner de Introdução com fundo animado -->
     <section id="banner" class="banner">
         <h2 class="banner-text">Reviva os Clássicos com Estilo</h2>
-        <p class="banner-subtext">Uma experiência completa para todos os fãs de retro games.</p>
+        <p class="banner-subtext">Uma jornada pelo passado dos videogames. Com RetroBat, jogue títulos inesquecíveis com uma interface moderna e super intuitiva.</p>
         <a href="#sobre" class="cta-button">Saiba Mais</a>
     </section>
 
@@ -29,39 +29,57 @@
     <main class="container">
         <section id="sobre" class="section">
             <h2>Sobre o Projeto</h2>
-            <p class="section-text">Este projeto usa o RetroBat, um sistema operacional projetado para emulação de jogos antigos, permitindo que você reviva a era dos jogos clássicos com uma interface moderna e intuitiva.</p>
+            <p class="section-text">
+                O RetroBat é uma plataforma de emulação que reúne os melhores jogos de consoles clássicos como Atari, Nintendo, Sega e muito mais. O sistema oferece uma experiência moderna, permitindo que você jogue esses títulos com suporte a controle, gráficos aprimorados e uma interface amigável.
+            </p>
+            <p class="section-text">
+                Com suporte a diversos tipos de emuladores, o RetroBat se torna a escolha ideal para quem quer reviver os bons momentos dos anos 80 e 90, seja para nostalgia ou para novos jogadores descobrirem as raízes dos videogames.
+            </p>
         </section>
 
-        <!-- Seção de Consoles em Destaque com cards estilizados -->
+        <!-- Seção de Consoles em Destaque com 3 consoles -->
         <section id="consoles" class="section consoles">
             <h2>Consoles em Destaque</h2>
             <div class="consoles-grid">
                 <div class="console-card">
-                    <img src="src/img/Atari.png" alt="Atari" class="console-img" width="25px">
-                    <h3>Atari</h3>
-                    <p>Consoles lendários que definiram uma geração.</p>
+                    <img src="src/img/Atari.png" alt="Atari" class="console-img">
+                    <h3>Atari 2600</h3>
+                    <p>O Atari 2600, lançado em 1977, foi um dos primeiros consoles de sucesso. Ele introduziu o conceito de cartuchos de jogos, permitindo aos jogadores trocar os títulos.</p>
+                    <p><strong>Impacto:</strong> Iniciou a era dos videogames domésticos.</p>
                 </div>
                 <div class="console-card">
                     <img src="src/img/Nintendo.png" alt="Nintendo" class="console-img">
-                    <h3>Nintendo</h3>
-                    <p>Casa de Mario, Zelda e muitos clássicos inesquecíveis.</p>
+                    <h3>Nintendo Entertainment System (NES)</h3>
+                    <p>O NES foi lançado em 1983 e revitalizou a indústria de jogos, trazendo grandes franquias como Mario, Zelda e Metroid.</p>
+                    <p><strong>Impacto:</strong> Definiu a indústria de consoles e ajudou a popularizar os jogos no mundo todo.</p>
+                </div>
+                <div class="console-card">
+                    <img src="src/img/Sega.png" alt="Sega" class="console-img">
+                    <h3>Sega Genesis</h3>
+                    <p>O Sega Genesis foi lançado em 1988 e apresentou ao mundo o famoso Sonic the Hedgehog. Um dos consoles mais amados da sua época.</p>
+                    <p><strong>Impacto:</strong> Contribuiu para a popularidade dos jogos de plataforma rápidos.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Jogos Clássicos com cards animados -->
+        <!-- Seção de Jogos Clássicos com 3 jogos -->
         <section id="jogos" class="section jogos">
             <h2>Jogos Clássicos</h2>
             <div class="jogos-grid">
                 <div class="jogo-card">
                     <img src="src/img/Mario.png" alt="Super Mario Bros" class="jogo-img">
                     <h3>Super Mario Bros</h3>
-                    <p>Uma das franquias mais icônicas do mundo dos games.</p>
+                    <p>Lançado em 1985, Mario redefiniu os jogos de plataforma.</p>
                 </div>
                 <div class="jogo-card">
                     <img src="src/img/PacMan" alt="Pac-Man" class="jogo-img">
                     <h3>Pac-Man</h3>
-                    <p>O clássico que dominou os arcades em todo o mundo.</p>
+                    <p>Pac-Man, lançado em 1980, se tornou um ícone dos arcades.</p>
+                </div>
+                <div class="jogo-card">
+                    <img src="src/img/StreetFighter.png" alt="Street Fighter" class="jogo-img">
+                    <h3>Street Fighter</h3>
+                    <p>Street Fighter II, lançado em 1991, revolucionou os jogos de luta.</p>
                 </div>
             </div>
         </section>
@@ -70,20 +88,10 @@
         <section id="audio-buttons" class="section">
             <h2>Botões de Áudio</h2>
             <div class="audio-buttons">
-                
-                <!-- Iframe do Hadouken -->
                 <iframe width="110" height="200" src="https://www.myinstants.com/instant/hadouken/embed/" frameborder="0" scrolling="no"></iframe>
-
-                <!-- Primeiro áudio (não alterado) -->
                 <audio id="audio1" src="src/sounds/audio1.mp3"></audio>
-
-                <!-- Segundo áudio, substituído pelo tema do Pac-Man -->
                 <iframe width="110" height="200" src="https://www.myinstants.com/instant/pac-man-theme-26365/embed/" frameborder="0" scrolling="no"></iframe>
-
-                <!-- Terceiro áudio (Pac-Man Dies) -->
                 <iframe width="110" height="200" src="https://www.myinstants.com/instant/pac-man-dies-19637/embed/" frameborder="0" scrolling="no"></iframe>
-
-                <!-- Terceiro áudio restaurado -->
                 <audio id="audio3" src="src/sounds/audio3.mp3"></audio>
             </div>
         </section>
@@ -94,9 +102,9 @@
             <ul class="curiosidades-list">
                 <li>Compatível com Atari, Nintendo, Sega e muito mais.</li>
                 <li>Oferece uma interface simples e intuitiva para iniciantes.</li>
+                <li>Permite a personalização de controles para uma experiência mais fluida.</li>
             </ul>
         </section>
-
     </main>
 
     <!-- Footer com layout limpo e icônico -->
@@ -105,41 +113,21 @@
             <h2>Equipe de Desenvolvimento</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <h3>Jean</h3>
-                    <p>Responsável pela arquitetura</p>
+                    <h3>Jean e Gustavo</h3>
+                    <p>Responsáveis pela arquitetura</p>
+                </div>
+                <div class="team-member">
+                    <h3>Murilo e Ryan</h3>
+                    <p>Responsáveis pela documentação</p>
                 </div>
                 <div class="team-member">
                     <h3>Lucas</h3>
-                    <p>Desenvolvimento do site</p>
+                    <p>Desenvolvedor do site</p>
                 </div>
-                <div class="team-member">
-                    <h3>Gustavo</h3>
-                    <p>Divulgação do Console</p>   
-                </div>
-                <div class="team-member">
-                    <h3>Murilo</h3>
-                    <p>Arquitetura do Projeto</p>
-                 <div>
-                    <div class="team-member">
-                        <h3>Ryan</h3>
-                        <p>Responsável Pelo </p>
-                    </div>
-                 </div>   
             </div>
         </section>
-
-        <!-- GIF do Hadouken (substituído e ajustado) -->
-        <div class="footer-gif">
-            <div class="tenor-gif-embed" data-postid="9352787" data-share-method="host" data-aspect-ratio="1.66667" data-width="200">
-                <a href="https://tenor.com/view/ryu-hadouken-street-fighter-power-gif-9352787">Ryu Hadouken GIF</a> from <a href="https://tenor.com/search/ryu-gifs">Ryu GIFs</a>
-            </div>
-            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-        </div>
-
-        <p>&copy; 2024 TI-43 MANDA EM TUDO</p>
     </footer>
 
-    <!-- Link para o arquivo JavaScript externo -->
-    <script src="src/js/script.js"></script>
+    <script src="./src/js/scripts.js"></script>
 </body>
 </html>
