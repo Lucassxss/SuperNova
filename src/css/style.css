@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Estilos Globais */
 body {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto', sans-serif;
     background-color: #121212;
     color: #e1e1e1;
     margin: 0;
@@ -18,14 +20,9 @@ body {
     to { opacity: 1; }
 }
 
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
-}
-
-@keyframes glow {
-    0%, 100% { text-shadow: 0 0 5px #00ffd5, 0 0 15px #00ffd5, 0 0 25px #00ffd5; }
-    50% { text-shadow: 0 0 10px #00ffd5, 0 0 30px #00ffcc, 0 0 40px #00ffff; }
+@keyframes subtleGlow {
+    0%, 100% { text-shadow: 0 0 5px #00ffd5, 0 0 15px #00ffd5, 0 0 20px #00ffd5; }
+    50% { text-shadow: 0 0 10px #00ffd5, 0 0 25px #00ffcc, 0 0 30px #00ffff; }
 }
 
 /* Header e Footer */
@@ -37,14 +34,14 @@ header, footer {
     width: 100%;
     border-radius: 10px 10px 0 0;
     box-shadow: 0 0 15px rgba(0, 255, 213, 0.4);
-    animation: glow 2s infinite alternate;
+    animation: subtleGlow 3s infinite alternate;
 }
 
 header h1, header h2 {
     margin: 0;
     font-size: 2rem;
-    text-shadow: 2px 2px 6px #00ffd5;
-    animation: bounce 2s infinite;
+    text-shadow: 1px 1px 5px #00ffd5;
+    animation: subtleGlow 3s infinite alternate;
 }
 
 footer {
@@ -62,7 +59,7 @@ footer {
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    animation: bounce 2s infinite;
+    animation: subtleGlow 3s infinite alternate;
 }
 
 .cta-button:hover {
@@ -96,7 +93,6 @@ footer {
     width: 160px;
     display: inline-block;
     transition: transform 0.3s, box-shadow 0.3s;
-    animation: bounce 2s infinite;
 }
 
 .console-card:hover, .jogo-card:hover {
@@ -113,13 +109,13 @@ footer {
     border: 2px solid #00ffd5;
     margin: 0 auto;
     display: block;
-    animation: glow 3s infinite alternate;
+    animation: subtleGlow 4s infinite alternate;
 }
 
 /* Títulos e Links */
 h1, h2, h3, a {
     color: #00ffd5;
-    animation: glow 2s infinite alternate;
+    animation: subtleGlow 4s infinite alternate;
 }
 
 a {
@@ -135,7 +131,7 @@ a:hover {
 /* Curiosidades */
 .curiosidades-list li {
     margin: 10px 0;
-    animation: bounce 2s infinite alternate;
+    animation: subtleGlow 4s infinite alternate;
 }
 
 /* Responsividade */
@@ -172,9 +168,9 @@ a:hover {
 /* Estilo para centralizar os iframes de áudio */
 .audio-buttons {
     display: flex;
-    justify-content: center; /* Centraliza os iframes horizontalmente */
-    align-items: center; /* Alinha os iframes verticalmente */
-    gap: 15px; /* Espaço entre os iframes */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -187,14 +183,14 @@ a:hover {
 /* Estilo para centralizar e ajustar o GIF no footer */
 .footer-gif {
     text-align: center;
-    margin-top: 20px; /* Espaçamento superior para separar do restante do conteúdo */
+    margin-top: 20px;
 }
 
 .tenor-gif-embed {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
+    width: 200px;
     height: auto;
-    border-radius: 10px; /* Adiciona bordas arredondadas */
-    box-shadow: 0 0 10px rgba(0, 255, 213, 0.6); /* Efeito de brilho ao redor do GIF */
-    animation: fadeIn 1s ease-in-out; /* Animação de entrada */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 213, 0.6);
+    animation: fadeIn 1s ease-in-out;
     margin-top: 10px;
 }
