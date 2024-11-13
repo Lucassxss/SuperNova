@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 /* Estilos Globais */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #121212;
-    color: #e1e1e1;
+    color: #b3b3ff; /* Texto suave, tom de azul claro */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -12,6 +10,9 @@ body {
     flex-direction: column;
     align-items: center;
     animation: fadeIn 1s ease-in-out;
+    background: linear-gradient(135deg, #1a1a1a, #333333, #6a00ff, #00b3b3);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
 }
 
 /* Animações */
@@ -20,27 +21,33 @@ body {
     to { opacity: 1; }
 }
 
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 @keyframes subtleGlow {
-    0%, 100% { text-shadow: 0 0 5px #00ffd5, 0 0 15px #00ffd5, 0 0 20px #00ffd5; }
-    50% { text-shadow: 0 0 10px #00ffd5, 0 0 25px #00ffcc, 0 0 30px #00ffff; }
+    0%, 100% { text-shadow: 0 0 4px #6a00ff, 0 0 12px #6a00ff, 0 0 18px #6a00ff; }
+    50% { text-shadow: 0 0 6px #6a00ff, 0 0 18px #8a00ff, 0 0 25px #00b3b3; }
 }
 
 /* Header e Footer */
 header, footer {
     background: linear-gradient(135deg, #1c1c1c 0%, #333333 100%);
-    color: #00ffd5;
+    color: #b3b3ff; /* Cor suave de texto */
     text-align: center;
     padding: 20px 0;
     width: 100%;
     border-radius: 10px 10px 0 0;
-    box-shadow: 0 0 15px rgba(0, 255, 213, 0.4);
+    box-shadow: 0 0 15px rgba(106, 0, 255, 0.4);
     animation: subtleGlow 3s infinite alternate;
 }
 
 header h1, header h2 {
     margin: 0;
     font-size: 2rem;
-    text-shadow: 1px 1px 5px #00ffd5;
+    text-shadow: 1px 1px 5px #6a00ff;
     animation: subtleGlow 3s infinite alternate;
 }
 
@@ -55,7 +62,7 @@ footer {
     display: inline-block;
     padding: 12px 24px;
     color: #121212;
-    background-color: #00ffd5;
+    background-color: #6a00ff; /* Cor suave, roxo claro */
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
@@ -63,9 +70,9 @@ footer {
 }
 
 .cta-button:hover {
-    background-color: #00ffcc;
+    background-color: #8a00ff;
     transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(0, 255, 213, 0.8);
+    box-shadow: 0 0 15px rgba(106, 0, 255, 0.8);
 }
 
 /* Seções */
@@ -73,8 +80,8 @@ footer {
     background-color: #1c1c1c;
     padding: 25px;
     margin: 20px 0;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-    border: 4px solid #00ffd5;
+    box-shadow: 0 0 20px rgba(106, 0, 255, 0.2);
+    border: 4px solid #6a00ff; /* Cor suave roxa */
     width: 100%;
     max-width: 800px;
     border-radius: 10px;
@@ -86,45 +93,54 @@ footer {
     text-align: center;
     padding: 12px;
     background-color: #2c2c2c;
-    border: 2px solid #00ffd5;
+    border: 2px solid #6a00ff; /* Cor suave roxa */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     margin: 12px;
     width: 160px;
     display: inline-block;
     transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .console-card:hover, .jogo-card:hover {
     transform: translateY(-12px);
-    box-shadow: 0 0 15px #00ffd5;
+    box-shadow: 0 0 15px #6a00ff;
 }
 
-/* Imagens */
+/* Ajuste para manter as imagens do Sega e Street Fighter no mesmo tamanho */
 .console-img, .jogo-img {
     width: 90px;
     height: 90px;
     object-fit: cover;
     border-radius: 12px;
-    border: 2px solid #00ffd5;
+    border: 2px solid #6a00ff; /* Cor suave */
     margin: 0 auto;
     display: block;
     animation: subtleGlow 4s infinite alternate;
 }
 
+/* Imagens de Consoles e Jogos ajustadas para ficar do mesmo tamanho */
+.console-card img, .jogo-card img {
+    width: 100px; /* Tamanho fixo para as imagens */
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
 /* Títulos e Links */
 h1, h2, h3, a {
-    color: #00ffd5;
+    color: #b3b3ff; /* Cor suave azul claro */
     animation: subtleGlow 4s infinite alternate;
 }
 
 a {
-    color: #00ffd5;
+    color: #b3b3ff; /* Cor suave */
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #00ffcc;
+    color: #8a00ff;
     text-decoration: underline;
 }
 
@@ -177,7 +193,7 @@ a:hover {
 .audio-buttons iframe {
     margin: 0;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 213, 0.6);
+    box-shadow: 0 0 10px rgba(106, 0, 255, 0.6);
 }
 
 /* Estilo para centralizar e ajustar o GIF no footer */
@@ -190,7 +206,7 @@ a:hover {
     width: 200px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 213, 0.6);
+    box-shadow: 0 0 10px rgba(106, 0, 255, 0.6);
     animation: fadeIn 1s ease-in-out;
     margin-top: 10px;
 }
