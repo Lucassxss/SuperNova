@@ -33,4 +33,42 @@
         margin-bottom: 15px;
     }
 
-    /*
+    /* Grid para consoles e jogos */
+    .consoles-grid, .jogos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .console-card, .jogo-card {
+        padding: 10px;
+    }
+
+    .console-img, .jogo-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Curiosidades */
+    .curiosidades-list {
+        padding-left: 20px;
+    }
+
+    /* Footer */
+    .team-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 10px;
+        border: 2px solid #ccc; /* Borda para contornar a seção inteira */
+        border-radius: 10px; /* Arredondamento da borda externa */
+        background-color: rgba(0, 0, 0, 0.2); /* Fundo levemente transparente */
+    }
+
+    .team-member {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3); /* Fundo para cada membro individual */
+        width: 100%; /* Ajusta a largura para alinhar corretamente */
+        box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    }
+}
