@@ -1,117 +1,63 @@
-/* Ajustes de media queries para dispositivos móveis */
-@media (max-width: 768px) {
+/* responsivo.css */
 
-    /* Ajustes para cabeçalho e rodapé */
-    header, footer {
-        padding: 10px 0;
-        width: 100%;
-        border-bottom: 2px solid #ffcc00;
-        border-top: 2px solid #ffcc00;
-        border-radius: 10px 10px 0 0;
-        box-sizing: border-box;
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        padding: 10px;
+    }
+    
+    .logo-container {
+        flex-direction: column;
         text-align: center;
     }
 
-    header h1 {
-        margin: 10px 0;
-        font-size: 22px; /* Reduzindo um pouco para caber melhor */
+    /* Banner */
+    .banner-text {
+        font-size: 1.5em;
+    }
+    
+    .banner-subtext {
+        font-size: 1em;
     }
 
-    header h2 {
-        margin: 5px 0;
-        font-size: 16px;
+    .cta-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1em;
     }
 
-    .logofeia {
-        height: 40px; /* Diminuindo o tamanho */
-        width: auto;
+    /* Layout das seções */
+    .section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Grid para consoles e jogos */
+    .consoles-grid, .jogos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .console-card, .jogo-card {
+        padding: 10px;
+    }
+
+    .console-img, .jogo-img {
+        width: 80%;
         margin: 0 auto;
     }
 
-    /* Ajustes para o main */
-    main {
-        padding: 10px;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .container {
-        padding: 10px;
-        border: 2px solid #ffcc00;
-        margin: 0 auto 10px; /* Margin inferior para separação */
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    h1 {
-        font-size: 22px; /* Ajustando o tamanho para melhor ajuste na tela */
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    h3 {
-        font-size: 14px;
-    }
-
-    /* Ajustes para vídeos e seções */
-    iframe {
-        height: 180px; /* Ajustando altura para que caiba em telas menores */
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .summary, .presentation {
-        margin: 10px auto;
-        padding: 10px;
-        border: 2px solid #ffcc00;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .console-details {
-        margin-top: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .console-details ul {
-        margin-top: 5px;
+    /* Curiosidades */
+    .curiosidades-list {
         padding-left: 20px;
     }
 
-    .console-details ul li {
-        margin-bottom: 5px;
-    }
-
-    /* Ajustes para equipe */
-    .team-members {
+    /* Footer */
+    .team-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         text-align: center;
-        margin-top: 10px;
-        box-sizing: border-box;
-    }
-
-    .team-members h3 {
-        margin: 5px 0;
-        font-size: 14px;
-    }
-
-    /* Garantindo que nada exceda a largura da tela */
-    * {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* Ajustando botões e imagens para centralizar e caber na tela */
-    .cta-button, .jogo-img {
-        display: block;
-        margin: 10px auto;
-        width: 90%; /* Largura responsiva para caber na tela */
-        max-width: 300px;
     }
 }
